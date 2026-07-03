@@ -5,7 +5,7 @@ Google Sheets or CSV data can be turned into an "Our AI Interview Check In" styl
 ## Included
 
 - Source files in `src/`
-- Built files in `dist/`
+- Shareable built files in `shared-build/`
 - Sample report screenshot: `chrome-report.png`
 - QA memo: `design-qa.md`
 
@@ -23,6 +23,20 @@ Open:
 ```text
 http://127.0.0.1:5173/
 ```
+
+## Shareable Build
+
+これはローカル環境で利用可能なツールです。
+
+`shared-build/` フォルダに入っている `index.html` をダブルクリックで開いて使ってください。ビルド済みの `index.html` は、Chrome の `file://` 表示でも動くように CSS と JavaScript を埋め込んでいます。
+
+Create a local shareable build in the repo root:
+
+```bash
+pnpm run build
+```
+
+The built app is written to `shared-build/`. You can share that directory as-is, zip it, or open `shared-build/index.html` locally.
 
 ## Data Input
 

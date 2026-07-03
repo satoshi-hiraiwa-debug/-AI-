@@ -4,3 +4,4 @@ dist/
 *.zip
 *.png
 !public/brand-logo.png
+!shared-build/**/*.png
